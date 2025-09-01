@@ -1,0 +1,141 @@
+.about-header {
+  padding-top: 50px;
+}
+
+.about-heading {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-primary);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 102px;
+}
+
+.about-left {
+  flex: 1 1 486px;
+  max-width: 486px;
+  display: flex;
+  margin-bottom: 0; /* reset for desktop */
+}
+
+.img-placeholder.full-height {
+  width: 100%;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.img-placeholder.full-height img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.about-right {
+  flex: 1 1 690px;
+  max-width: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 16px;
+}
+
+.about-subheading {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.breadcrumbs {
+  margin-bottom: 54px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.breadcrumb-divider {
+  margin: 0 6px;
+  color: var(--color-primary);
+}
+
+.breadcrumb-current {
+  color: var(--color-primary);
+}
+
+.img-placeholder.small {
+  width: 100%;
+  max-width: 282px;
+  margin: 0;
+}
+
+.img-placeholder.small img {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-left,
+  .about-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-left {
+    margin-bottom: 24px;
+  }
+
+  .about-subheading,
+  .breadcrumbs {
+    text-align: center;
+  }
+
+  .img-placeholder.small {
+    margin: 0 auto;
+  }
+
+  .img-placeholder.full-height {
+    height: 200px;
+  }
+
+  /* Make images fully responsive */
+  .img-placeholder.full-height img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .about-heading {
+    font-size: 36px;
+  }
+
+  .about-subheading {
+    font-size: 28px;
+  }
+
+  .breadcrumbs {
+    font-size: 16px;
+  }
+}

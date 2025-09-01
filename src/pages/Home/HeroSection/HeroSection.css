@@ -1,0 +1,245 @@
+.reconnect-section {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.reconnect-inner {
+  width: 100%;
+  display: flex;
+  gap: 79px;
+  align-items: start;
+  justify-content: center;
+  max-width: 1200px; /* Optional max width for large screens */
+}
+
+.reconnect-text {
+  flex: 1 1 518px;
+  max-width: 518px;
+}
+
+.reconnect-safe-place {
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.reconnect-safe-place .heart {
+  margin-right: 8px;
+  width: 18px;
+  height: 16px;
+}
+
+.reconnect-heading {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.reconnect-description {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-grey);
+  margin-bottom: 27px;
+  max-width: 486px;
+  width: 100%;
+}
+
+.reconnect-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 8px 8px 8px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  gap: 20px;
+  border: none;
+  transition: all 0.3s ease;
+  max-width: 214px;
+}
+
+.cta-text {
+  font-family: Karla;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: var(--color-light);
+}
+
+.cta-circle {
+  background-color: var(--color-primary-accent);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-arrow {
+  color: var(--color-primary);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-icon {
+  width: 38px;
+  height: 38px;
+}
+
+.contact-label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: var(--color-dark);
+}
+
+.contact-number {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #636363;
+}
+
+.reconnect-image-container {
+  flex: 1 1 603px;
+  max-width: 603px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.reconnect-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+@media (max-width: 1024px) {
+  .reconnect-inner {
+    gap: 48px;
+    padding: 0 24px;
+  }
+
+  .reconnect-heading {
+    font-size: 32px;
+  }
+
+  .reconnect-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .cta-text {
+    font-size: 16px;
+  }
+
+  .contact-label {
+    font-size: 16px;
+  }
+
+  .contact-number {
+    font-size: 14px;
+  }
+
+  .cta-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cta-arrow {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reconnect-inner {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 16px;
+  }
+  .reconnect-safe-place {
+    justify-content: center;
+  }
+  .reconnect-text,
+  .reconnect-image-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .reconnect-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .reconnect-description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .reconnect-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .cta-button {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .contact-label,
+  .contact-number {
+    text-align: center;
+  }
+
+  .contact-label {
+    font-size: 14px;
+  }
+
+  .contact-number {
+    font-size: 12px;
+  }
+
+  .cta-text {
+    font-size: 14px;
+  }
+
+  .cta-circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .cta-arrow {
+    font-size: 12px;
+  }
+}

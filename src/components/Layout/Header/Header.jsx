@@ -1,10 +1,17 @@
 import { Link } from 'react-router'
+import { useState } from 'react';
 
-import './Header.css'
+import OffCanvasMenu from '../OffCanvasMenu/OffCanvasMenu';
 
 import logo from '../../../assets/logo.png'
 
+import './Header.css'
+
+
 const Header = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
     return (
         <header className="container">
@@ -19,7 +26,7 @@ const Header = () => {
                         <li><Link to="/about-us">About Us</Link></li>
                         <li><Link to="/contact-us">Contact Us</Link></li>
                     </ul>
-                    <button className="menu-btn">
+                    <button className="menu-btn" onClick={() => setIsMenuOpen(true)}>
                         <span className="menu-icon">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.125 3.23522H16.8643C17.1748 3.23522 17.4268 2.98322 17.4268 2.67272C17.4268 2.36222 17.1748 2.11022 16.8643 2.11022H1.125C0.8145 2.11022 0.5625 2.36222 0.5625 2.67272C0.5625 2.98322 0.8145 3.23522 1.125 3.23522Z" fill="#FDFBFF" />
@@ -30,6 +37,9 @@ const Header = () => {
                     </button>
                 </nav>
             </div>
+
+            {/* Offcanvas menu */}
+            <OffCanvasMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
         </header>
     )

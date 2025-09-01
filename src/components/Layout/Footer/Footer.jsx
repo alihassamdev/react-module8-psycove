@@ -123,15 +123,59 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="footer-bottom">
-                    <p>Copyright © 2025 Rometheme. All Rights Reserved.</p>
-                    <div className="back-to-top">
-                        <i className="fas fa-arrow-up"></i>
+                <div className="footer-bar">
+                    {/* Line and scroll button */}
+                    <div className="footer-line-wrapper">
+                        <div className="footer-line" >
+                            {/* Bottom copyright */}
+                            <div className="footer-bottom-row">
+                                <p className="footer-copyright">
+                                    Copyright © 2025 Rometheme. All Rights Reserved.
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            className="scrollup-button"
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            aria-label="Scroll to Top"
+                        >
+                            <svg className="scrollup-circle" width="84" height="84" viewBox="0 0 84 84">
+                                <defs>
+                                    <path
+                                        id="circlePath"
+                                        d="M42,42
+           m -38,0
+           a 38,38 0 1,1 76,0
+           a 38,38 0 1,1 -76,0"
+                                    />
+                                </defs>
+                                <text
+                                    fontFamily="Poppins"
+                                    fontWeight="500"
+                                    fontSize="7.72px"
+                                    letterSpacing="0"
+                                    fill="white"
+                                    textLength="238"
+                                    lengthAdjust="spacingAndGlyphs"
+                                >
+                                    <textPath href="#circlePath" startOffset="0%">
+                                        Scroll up · Scroll up · Scroll up · Scroll up · Scroll up · Scroll up ·
+                                    </textPath>
+                                </text>
+                            </svg>
+
+                            <span className="scrollup-arrow">↑</span>
+                        </button>
+
+
                     </div>
+
+
                 </div>
+
             </div>
 
-        </footer>
+        </footer >
 
     )
 }

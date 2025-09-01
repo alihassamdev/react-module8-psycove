@@ -1,0 +1,183 @@
+.about-full-section {
+  padding-top: 68px;
+}
+
+.about-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 37px;
+}
+
+.about-intro {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.about-bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 79px;
+}
+
+.about-image-container {
+  flex: 1 1 518px;
+  max-width: 518px;
+  overflow: hidden;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.about-text-content {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.about-paragraph {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 27px;
+  color: var(--color-grey);
+  max-width: 603px;
+}
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #a5b48d;
+  padding: 12px 16px 12px 24px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.about-button:hover {
+  background-color: #91a277;
+}
+
+.button-text {
+  color: #ffffff;
+}
+
+.button-circle {
+  background-color: #e5ecdd;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-arrow {
+  color: #5e7045;
+  font-size: 18px;
+}
+
+/* ====================
+   RESPONSIVE STYLES
+==================== */
+
+@media (max-width: 1024px) {
+  .about-full-section {
+    padding-top: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  .about-text-content {
+    padding-top: 60px;
+  }
+
+  .about-bottom-content {
+    gap: 48px;
+  }
+
+  .about-button {
+    font-size: 15px;
+  }
+
+  .button-circle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .button-arrow {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-full-section {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about-paragraph {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .about-text-content {
+    padding-top: 32px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-bottom-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about-image-container,
+  .about-text-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-button {
+    font-size: 14px;
+  }
+
+  .button-circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .button-arrow {
+    font-size: 14px;
+  }
+}

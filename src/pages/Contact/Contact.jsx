@@ -1,9 +1,17 @@
-import './Contact.css'
+import './Contact.css';
+
+import ContactBanner from './ContactBanner/ContactBanner';
+import { ContactForm } from './ContactForm/ContactForm';
+
 
 const Contact = () => {
     return (
-        <div>Contact</div>
-    )
-}
+        <div className='container'>
+            <ContactBanner />
+            <ContactForm />
 
-export default Contact
+        </div>
+    );
+};
+
+export default Contact;

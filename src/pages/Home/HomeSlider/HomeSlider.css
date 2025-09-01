@@ -1,0 +1,78 @@
+/* HomeSlider.css */
+
+.slider-wrapper {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  text-align: center;
+  position: relative;
+}
+
+.custom-swiper {
+  padding-bottom: 30px;
+}
+
+.slide-box img {
+  max-width: 588px;
+  width: 100%;
+  height: auto;
+}
+
+.custom-nav-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.nav-btn {
+  background-color: var(--color-primary-accent);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .slide-box img {
+    max-width: 480px;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .slide-box img {
+    max-width: 100%;
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
