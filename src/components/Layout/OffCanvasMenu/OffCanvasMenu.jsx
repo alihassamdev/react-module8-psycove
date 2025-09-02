@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 import "./OffCanvasMenu.css";
 
 const OffCanvasMenu = ({ isOpen, onClose }) => {
@@ -18,49 +20,49 @@ const OffCanvasMenu = ({ isOpen, onClose }) => {
                 aria-label="Mobile navigation"
             >
                 <div>
-                    <ul class="offcanvas-menu">
-                        <li class="menu-item active">
-                            <span class="menu-number">01</span>
-                            <span class="menu-text">Homepage</span>
-                            <span class="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ul className="offcanvas-menu">
+                        <li className="menu-item active"><Link to="/" >
+                            <span className="menu-number">01</span>
+                            <span className="menu-text">Homepage</span>
+                            <span className="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.0891 9.43001L7.01093 2.41407C6.70468 2.11001 6.21 2.11251 5.90625 2.41907C5.6025 2.72532 5.60468 3.22001 5.91125 3.52376L12.4319 9.98688L5.93062 16.4784C5.62531 16.7834 5.625 17.2781 5.93 17.5834C6.0825 17.7363 6.2825 17.8125 6.48281 17.8125C6.68312 17.8125 6.88218 17.7363 7.035 17.5841L14.0919 10.5375C14.2391 10.3906 14.3212 10.1913 14.3209 9.98344C14.3206 9.77532 14.2372 9.57626 14.0897 9.43001H14.0891Z" fill="#819361" />
                             </svg>
-                            </span>
+                            </span></Link>
                         </li>
-                        <li class="menu-item">
-                            <span class="menu-number">02</span>
-                            <span class="menu-text">About Us</span>
-                            <span class="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className="menu-item"><Link to="/about-us" >
+                            <span className="menu-number">02</span>
+                            <span className="menu-text">About Us</span>
+                            <span className="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.0891 9.43001L7.01093 2.41407C6.70468 2.11001 6.21 2.11251 5.90625 2.41907C5.6025 2.72532 5.60468 3.22001 5.91125 3.52376L12.4319 9.98688L5.93062 16.4784C5.62531 16.7834 5.625 17.2781 5.93 17.5834C6.0825 17.7363 6.2825 17.8125 6.48281 17.8125C6.68312 17.8125 6.88218 17.7363 7.035 17.5841L14.0919 10.5375C14.2391 10.3906 14.3212 10.1913 14.3209 9.98344C14.3206 9.77532 14.2372 9.57626 14.0897 9.43001H14.0891Z" fill="#819361" />
                             </svg>
-                            </span>
+                            </span></Link>
                         </li>
-                        <li class="menu-item">
-                            <span class="menu-number">03</span>
-                            <span class="menu-text">Services</span>
-                            <span class="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className="menu-item"><Link to="/" >
+                            <span className="menu-number">03</span>
+                            <span className="menu-text">Services</span>
+                            <span className="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.0891 9.43001L7.01093 2.41407C6.70468 2.11001 6.21 2.11251 5.90625 2.41907C5.6025 2.72532 5.60468 3.22001 5.91125 3.52376L12.4319 9.98688L5.93062 16.4784C5.62531 16.7834 5.625 17.2781 5.93 17.5834C6.0825 17.7363 6.2825 17.8125 6.48281 17.8125C6.68312 17.8125 6.88218 17.7363 7.035 17.5841L14.0919 10.5375C14.2391 10.3906 14.3212 10.1913 14.3209 9.98344C14.3206 9.77532 14.2372 9.57626 14.0897 9.43001H14.0891Z" fill="#819361" />
                             </svg>
-                            </span>
+                            </span></Link>
                         </li>
-                        <li class="menu-item">
-                            <span class="menu-number">04</span>
-                            <span class="menu-text">Pages</span>
-                            <span class="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className="menu-item"><Link to="/" >
+                            <span className="menu-number">04</span>
+                            <span className="menu-text">Pages</span>
+                            <span className="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.0891 9.43001L7.01093 2.41407C6.70468 2.11001 6.21 2.11251 5.90625 2.41907C5.6025 2.72532 5.60468 3.22001 5.91125 3.52376L12.4319 9.98688L5.93062 16.4784C5.62531 16.7834 5.625 17.2781 5.93 17.5834C6.0825 17.7363 6.2825 17.8125 6.48281 17.8125C6.68312 17.8125 6.88218 17.7363 7.035 17.5841L14.0919 10.5375C14.2391 10.3906 14.3212 10.1913 14.3209 9.98344C14.3206 9.77532 14.2372 9.57626 14.0897 9.43001H14.0891Z" fill="#819361" />
                             </svg>
-                            </span>
+                            </span></Link>
                         </li>
-                        <li class="menu-item">
-                            <span class="menu-number">05</span>
-                            <span class="menu-text">Contact Us</span>
-                            <span class="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className="menu-item"><Link to="contact-us" >
+                            <span className="menu-number">05</span>
+                            <span className="menu-text">Contact Us</span>
+                            <span className="menu-arrow"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.0891 9.43001L7.01093 2.41407C6.70468 2.11001 6.21 2.11251 5.90625 2.41907C5.6025 2.72532 5.60468 3.22001 5.91125 3.52376L12.4319 9.98688L5.93062 16.4784C5.62531 16.7834 5.625 17.2781 5.93 17.5834C6.0825 17.7363 6.2825 17.8125 6.48281 17.8125C6.68312 17.8125 6.88218 17.7363 7.035 17.5841L14.0919 10.5375C14.2391 10.3906 14.3212 10.1913 14.3209 9.98344C14.3206 9.77532 14.2372 9.57626 14.0897 9.43001H14.0891Z" fill="#819361" />
                             </svg>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+                            </span></Link>
+                        </li >
+                    </ul >
+                </div >
 
                 <div className="offcanvas-footer">
                     <div className="info-item">
@@ -107,7 +109,15 @@ const OffCanvasMenu = ({ isOpen, onClose }) => {
                         <span className="text">0761-8523-398</span>
                     </div>
                 </div>
-            </nav>
+
+                <button
+                    className="offcanvas-close-button"
+                    onClick={onClose}
+                    aria-label="Close menu"
+                >
+                    ✕
+                </button>
+            </nav >
         </>
     );
 };

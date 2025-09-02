@@ -154,7 +154,26 @@
   line-height: 16px;
 }
 
-/* Responsive (optional) */
+.offcanvas-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+/* Responsive  */
+@media (max-width: 786px) {
+  .offcanvas-close-button {
+    display: inline-block;
+  }
+}
+
 @media (max-width: 576px) {
   .offcanvas {
     width: 100%;

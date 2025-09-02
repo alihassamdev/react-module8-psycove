@@ -7,11 +7,11 @@
 }
 
 /* LEFT SECTION */
-.contact-left {
+.contact-banner .contact-left {
   flex: 1 1 518px;
   max-width: 518px;
 }
-.contact-icon {
+.contact-banner .contact-icon {
   display: flex;
   align-items: center;
   font-family: Poppins;
@@ -24,13 +24,13 @@
   width: 100%;
 }
 
-.contact-icon .heart {
+.contact-banner .contact-icon .heart {
   margin-right: 8px;
   width: 18px;
   height: 16px;
 }
 
-.contact-heading {
+.contact-banner .contact-heading {
   font-family: Poppins;
   font-weight: 700;
   font-size: 40px;
@@ -40,13 +40,13 @@
   margin-bottom: 16px;
 }
 
-.map-image {
+.contact-banner .map-image {
   width: 100%;
   border-radius: 12px;
 }
 
 /* RIGHT SECTION */
-.contact-right {
+.contact-banner .contact-right {
   flex: 1 1 280px;
   max-width: 280px;
   display: flex;
@@ -54,7 +54,7 @@
   gap: 8px;
 }
 
-.icon-list {
+.contact-banner .icon-list {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -62,21 +62,71 @@
   fill: #636363;
 }
 
-.icon-list:hover {
+.contact-banner .icon-list:hover {
   color: var(--color-primary);
 }
 
-.icon-list svg {
+.contact-banner .icon-list svg {
   line-height: 16px;
 }
 
-/* RESPONSIVE */
+/* Existing Media Query (Updated) */
 @media (max-width: 768px) {
   .contact-banner {
     flex-direction: column;
+    gap: 32px;
+    padding-top: 48px;
   }
 
-  .form-row {
-    flex-direction: column;
+  .contact-banner .contact-left,
+  .contact-banner .contact-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .contact-banner .contact-heading {
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .contact-banner .contact-icon {
+    font-size: 16px;
+  }
+
+  .contact-banner .icon-list {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .contact-banner .icon-list svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .contact-banner {
+    gap: 24px;
+    padding-top: 32px;
+  }
+
+  .contact-banner .contact-heading {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .contact-banner .contact-icon {
+    font-size: 14px;
+  }
+
+  .contact-banner .icon-list {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .contact-banner .icon-list svg {
+    width: 16px;
+    height: 16px;
   }
 }
