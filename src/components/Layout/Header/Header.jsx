@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import OffCanvasMenu from '../OffCanvasMenu/OffCanvasMenu';
 
-import logo from '../../../assets/logo.png'
+import logo from '../../../assets/Logo.png'
 
 import './Header.css'
 
